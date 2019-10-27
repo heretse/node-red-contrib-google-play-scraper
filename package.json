@@ -1,0 +1,30 @@
+{
+    "name": "node-red-contrib-google-play-scraper",
+    "version": "1.0.0",
+    "description": "A google-play-scraper wrapper node for Node-RED.",
+    "node-red": {
+        "nodes": {
+            "sample-node": "nodes/google-play-scraper.js"
+        }
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/heretse/node-red-contrib-google-play-scraper.git"
+    },
+    "keywords": [
+        "node-red",
+        "google-play-scraper"
+    ],
+    "author": "winston_hsieh",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/heretse/node-red-contrib-google-play-scraper/issues"
+    },
+    "homepage": "https://github.com/heretse/node-red-contrib-google-play-scraper#readme",
+    "dependencies": {
+        "google-play-scraper": "^7.0.4"
+    }
+}

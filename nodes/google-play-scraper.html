@@ -1,0 +1,57 @@
+<script type="text/javascript">
+    RED.nodes.registerType('google-play-scraper', {
+        category: 'function',
+        color: '#a6bbcf',
+        defaults: {
+            name: {
+                value: ""
+            },
+            appId: {
+                value: "",
+                required: true
+            },
+            lang: {
+                value: "",
+                required: false
+            },
+            country: {
+                value: "",
+                required: false
+            }
+        },
+        inputs: 1,
+        outputs: 1,
+        icon: "file.png",
+        label: function() {
+            return this.name || "google-play-scraper";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="google-play-scraper">
+
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+
+    <div class="form-row">
+        <label for="node-input-appId"><i class="icon-tag"></i> Application Id</label>
+        <input type="text" id="node-input-appId" placeholder="the Google Play id of the application">
+    </div>
+
+    <div class="form-row">
+        <label for="node-input-lang"><i class="icon-tag"></i> Language</label>
+        <input type="text" id="node-input-lang" placeholder="optional, defaults to 'en'">
+    </div>
+
+    <div class="form-row">
+        <label for="node-input-lang"><i class="icon-tag"></i> country</label>
+        <input type="text" id="node-input-lang" placeholder="optional, defaults to 'us'">
+    </div>
+
+</script>
+
+<script type="text/x-red" data-help-name="google-play-scraper">
+    <p>A google-play-scraper node that scrapes application data from the Google Play store into the message payloadss</p>
+</script>
