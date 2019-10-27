@@ -14,6 +14,18 @@ module.exports = function(RED) {
             this.lang = config.lang;
             this.country = config.country;
 
+            if (msg.payload.appId) {
+                this.appId = msg.payload.appId;
+            }
+
+            if (msg.payload.lang) {
+                this.lang = msg.payload.lang;
+            }
+
+            if (msg.payload.country) {
+                this.country = msg.payload.country;
+            }
+
             scraper.app(
                 {
                     appId : this.appId,
